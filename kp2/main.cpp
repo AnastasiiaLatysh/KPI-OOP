@@ -6,10 +6,18 @@
 //  Copyright © 2019 Anastasiia Latysh. All rights reserved.
 //
 
-#include <iostream>
+#include "address_tests.hpp"
+#include "exhibit_tests.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    cout << "ADDRESS TESTS:" << endl;
+    testCreateAddressWithDefaultConstructor();
+    testCreateAddressWithNotDefaultConstructor();
+    testCopyAddress();
+    
+    cout << "EXHIBIT TESTS:" << endl;
+    testCreateExhibitWithDefaultConstructor();
+    testCreateExhibitWithNotDefaultConstructor();
+    testCopyExhibit();
     return 0;
 }
